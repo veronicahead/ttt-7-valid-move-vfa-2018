@@ -2,7 +2,11 @@
 def valid_move?(board, index)
   valid = nil
   if (index >= 0 && index <= 8)
-    valid = true
+    if (position_taken?(board,index) == true)
+      valid = false
+    else
+      valid = true
+    end
   else 
     valid = false
   end
