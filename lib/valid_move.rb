@@ -1,7 +1,7 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
   valid = nil
-  if (index >= 0 $$ index <= 8)
+  if (index >= 0 && index <= 8)
     valid = true
   else 
     valid = false
