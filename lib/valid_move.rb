@@ -1,7 +1,9 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
   valid = nil
+  # check to see if index is on the board
   if (index >= 0 && index <= 8)
+    # check to see if space is alread occupied
     if (position_taken?(board,index) == true)
       valid = false
     else
